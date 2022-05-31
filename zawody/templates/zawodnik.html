@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1> Players List </h1>
+
+    {% for player in object_list %}
+        <li>{{player.Imie}} {{player.Nazwisko}}</li>
+    {% empty %}
+        <li>No players yet.</li>
+    {% endfor %}
+</body>
+</html>
