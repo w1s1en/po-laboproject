@@ -6,8 +6,8 @@
 <body>
     <h1> Competitions List </h1>
 
-    {% for Competitions in object_list %}
-        <li>{{Competitions.Nazwa}} {{Competitions.Miejsce}}</li>
+    {% for Competition in object_list %}
+        <li>{{Competition.Nazwa}} {{Competition.Miejsce}}</li>
     {% empty %}
         <li>No Competitions yet.</li>
     {% endfor %}

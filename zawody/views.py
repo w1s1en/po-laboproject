@@ -6,7 +6,7 @@ from .models import *
 
 class Playerviev(generic.ListView):
     model= Player
-    template_name='zawodnik.html'
+    template_name='zawodnik.html'#nazwa html
     def get_queryset(self): 
         return Player.objects.all() #wyrzuca wszystkie obiekty dla zawodników
 
